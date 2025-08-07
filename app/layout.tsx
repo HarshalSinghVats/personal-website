@@ -1,5 +1,6 @@
 import "@/styles/globals.css"
 import { Inter } from "next/font/google"
+import { title } from "process"
 import type React from "react" // Import React
 
 const inter = Inter({ subsets: ["latin"] })
@@ -17,5 +18,6 @@ export default function RootLayout({
 }
 
 export const metadata = {
-      generator: 'v0.dev'
+      generator: 'v0.dev',
+      title: 'Harshal Singh Vats',
     };
