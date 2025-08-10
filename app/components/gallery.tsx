@@ -10,22 +10,22 @@ export default function Gallery() {
 
   const images = [
     {
-      src: "/placeholder.svg?height=600&width=400",
+      src: "/diabetes.png",
       alt: "Project 1",
-      title: "E-commerce Platform",
+      title: "Disease Prediction Model",
     },
     {
-      src: "/placeholder.svg?height=600&width=400",
+      src: "/placeholder.svg",
       alt: "Project 2",
       title: "Data Analytics Dashboard",
     },
     {
-      src: "/placeholder.svg?height=600&width=400",
+      src: "/placeholder.svg",
       alt: "Project 3",
       title: "Mobile Banking App",
     },
     {
-      src: "/placeholder.svg?height=600&width=400",
+      src: "/placeholder.svg",
       alt: "Project 4",
       title: "AI Recommendation System",
     },
@@ -42,6 +42,7 @@ export default function Gallery() {
         >
           Deliverables
         </motion.h2>
+
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {images.map((image, index) => (
             <motion.div
@@ -51,13 +52,18 @@ export default function Gallery() {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
             >
-              <div className="aspect-[2/3] overflow-hidden">
+              {/* Force uniform 3:4 aspect ratio */}
+              <div className="aspect-[7.3/6] min-h-[22rem]">
                 <img
-                  src={image.src || "/placeholder.svg"}
+                  src={image.src}
                   alt={image.alt}
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
+
+
+
+              {/* Overlay */}
               <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <h3 className="text-xl font-semibold text-white">{image.title}</h3>
               </div>

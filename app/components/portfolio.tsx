@@ -12,13 +12,13 @@ export default function Portfolio() {
   const skills = [
     {
       id: 1,
-      title: "React & TypeScript",
+      title: "React",
       category: "frontend",
       percentage: 90,
     },
     {
       id: 2,
-      title: "Python & Machine Learning",
+      title: "Python",
       category: "aI",
       percentage: 85,
     },
@@ -36,7 +36,7 @@ export default function Portfolio() {
     },
     {
       id: 5,
-      title: "Next.js & Tailwind",
+      title: "JavaScript & TypeScript",
       category: "frontend",
       percentage: 92,
     },
@@ -48,15 +48,15 @@ export default function Portfolio() {
     },
     {
       id: 7,
-      title: "TensorFlow & PyTorch",
+      title: "Scikit-Learn",
       category: "aI",
-      percentage: 78,
+      percentage: 32,
     },
     {
       id: 8,
-      title: "Power BI & Tableau",
+      title: "MySQL",
       category: "analytics",
-      percentage: 85,
+      percentage: 54,
     },
   ]
 
