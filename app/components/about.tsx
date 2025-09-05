@@ -54,12 +54,20 @@ export default function About() {
               </p>
             </div>
 
-            <a href="/cv.pdf" download>
-              <Button className="rounded-full bg-white text-black hover:bg-gray-200 transition-colors mt-6">
-                <Download className="mr-2 h-4 w-4 " />
-                Download CV
-              </Button>
-            </a>
+            <div className="flex gap-4 mt-6">
+              <a href="/cv.pdf" download>
+                <Button className="w-40 rounded-full bg-white text-black hover:bg-gray-200 transition-colors">
+                  <Download className="mr-2 h-4 w-4" />
+                  Download CV
+                </Button>
+              </a>
+              <a href="/cv.pdf">
+                <Button className="w-40 rounded-full bg-white text-black hover:bg-gray-200 transition-colors">
+                  My blogs!
+                </Button>
+              </a>
+            </div>
+
 
           </motion.div>
         </div>
