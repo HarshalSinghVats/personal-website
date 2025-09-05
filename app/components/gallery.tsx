@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { useRef } from "react"
 import { useInView } from "framer-motion"
+import Link from "next/link"
 
 export default function Gallery() {
   const ref = useRef(null)
@@ -10,24 +11,28 @@ export default function Gallery() {
 
   const images = [
     {
-      src: "/diabetes.png",
+      src: "/heart.png",
       alt: "Project 1",
-      title: "Disease Prediction Model",
+      title: "Health Prediction Model",
+      link: "https://hsv-disease.streamlit.app",
     },
     {
-      src: "/placeholder.svg",
+      src: "/titanic.png",
       alt: "Project 2",
-      title: "Data Analytics Dashboard",
+      title: "Titanic Survival Simulation",
+      link: "https://titanic-survival-hsv.streamlit.app",
     },
     {
-      src: "/placeholder.svg",
+      src: "/football.jpg",
       alt: "Project 3",
-      title: "Mobile Banking App",
+      title: "Football Prediction Model",
+      link: "https://football-prediction-model-hsv.streamlit.app",
     },
     {
-      src: "/placeholder.svg",
+      src: "/vid-player.jpg",
       alt: "Project 4",
-      title: "AI Recommendation System",
+      title: "Local Video Player",
+      link: "https://github.com/HarshalSinghVats/video-player",
     },
   ]
 
@@ -45,29 +50,35 @@ export default function Gallery() {
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {images.map((image, index) => (
-            <motion.div
+            <Link
               key={index}
-              className="group relative overflow-hidden rounded-lg"
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
+              href={image.link}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              {/* Force uniform 3:4 aspect ratio */}
-              <div className="aspect-[7.3/6] min-h-[22rem]">
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
+              <motion.div
+                className="group relative overflow-hidden rounded-lg cursor-pointer"
+                initial={{ opacity: 0, y: 20 }}
+                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{ duration: 0.8, delay: index * 0.2 }}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                {/* Force uniform 3:4 aspect ratio */}
+                <div className="aspect-[4.9/6] min-h-[22rem]">
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
 
-
-
-              {/* Overlay */}
-              <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                <h3 className="text-xl font-semibold text-white">{image.title}</h3>
-              </div>
-            </motion.div>
+                {/* Overlay */}
+                <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  <h3 className="text-xl font-semibold text-white">{image.title}</h3>
+                </div>
+              </motion.div>
+            </Link>
           ))}
         </div>
       </div>

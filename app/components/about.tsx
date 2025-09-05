@@ -20,13 +20,12 @@ export default function About() {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="aspect-square overflow-hidden rounded-lg bg-zinc-800">
-              <img
-                src="/klaus.jpg?height=500&width=500"
-                alt="Harshal Singh Vats"
-                className="h-full w-full object-cover"
-              />
-            </div>
+            <img
+              src="/minecraft-me.png?height=600&width=500"
+              alt="Harshal Singh Vats"
+              className="h-full w-full object-cover object-[center_20px]"
+            />
+
           </motion.div>
           <motion.div
             className="space-y-6"
