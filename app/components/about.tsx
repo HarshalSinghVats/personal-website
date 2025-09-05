@@ -36,18 +36,21 @@ export default function About() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-white">About Me</h2>
             <div className="space-y-4 text-gray-300 text-lg">
               <p>
-                I'm a passionate Software Engineer & Analyst with a keen eye for detail and a love for solving complex
+                I'm a passionate software engineer with a keen eye for detail and a love for solving complex
                 problems. My journey in technology has been driven by curiosity and the desire to create meaningful
                 digital experiences.
               </p>
               <p>
-                With expertise spanning full-stack development, data analysis, and system architecture, I bring a
+                With expertise spanning full-stack development, data analysis, and artificial intelligence, I bring a
                 comprehensive approach to every project. I believe in the power of clean code, efficient algorithms, and
                 user-centered design.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or
-                analyzing data patterns to uncover insights that drive business decisions.
+                When I'm not coding, you'll find me exploring new technologies, playing Valorant, or
+                just existing thinking about random topics.
+              </p>
+              <p>
+                Currently, I'm studying Golang, looking forward to work with it.
               </p>
             </div>
 
