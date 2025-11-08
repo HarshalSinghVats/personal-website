@@ -61,11 +61,11 @@ export default function About() {
                   Download CV
                 </Button>
               </a>
-              <a href="/cv.pdf">
+              {/* <a href="/cv.pdf">
                 <Button className="w-40 rounded-full bg-white text-black hover:bg-gray-200 transition-colors">
                   My blogs!
                 </Button>
-              </a>
+              </a> */}
             </div>
 
 

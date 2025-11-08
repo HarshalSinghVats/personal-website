@@ -5,6 +5,7 @@ import Portfolio from "./components/portfolio"
 import Contact from "./components/contact"
 import Footer from "./components/footer"
 import { CustomCursor } from "./components/custom-cursor"
+import WorkExperience from "./components/work-experience"
 
 export default function Page() {
   return (
@@ -12,6 +13,7 @@ export default function Page() {
       <CustomCursor />
       <Hero />
       <About />
+      <WorkExperience/>
       <Gallery />
       <Portfolio />
       <Contact />
