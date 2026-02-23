@@ -21,7 +21,7 @@ export default function About() {
             transition={{ duration: 0.8 }}
           >
             <img
-              src="/minecraft-me.png?height=600&width=500"
+              src="/portfolio.jpg?height=600&width=500"
               alt="Harshal Singh Vats"
               className="h-full w-full object-cover object-[center_20px]"
             />
