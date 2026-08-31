@@ -1,14 +1,13 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useRef } from "react"
-import { useInView } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import { Download } from 'lucide-react'
+import { Button } from "@/components/ui/button";
+import { motion, useInView } from "framer-motion";
+import { Download } from "lucide-react";
+import { useRef } from "react";
 
 export default function About() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: false })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false });
 
   return (
     <section id="about-section" className="relative py-20 bg-zinc-900">
@@ -21,11 +20,10 @@ export default function About() {
             transition={{ duration: 0.8 }}
           >
             <img
-              src="/minecraft-me.png?height=600&width=500"
+              src="/profile.jpg?height=600&width=500"
               alt="Harshal Singh Vats"
               className="h-full w-full object-cover object-[center_20px]"
             />
-
           </motion.div>
           <motion.div
             className="space-y-6"
@@ -33,21 +31,25 @@ export default function About() {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-white">About Me</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-white">
+              About Me
+            </h2>
             <div className="space-y-4 text-gray-300 text-lg">
               <p>
-                I'm a passionate software engineer with a keen eye for detail and a love for solving complex
-                problems. My journey in technology has been driven by curiosity and the desire to create meaningful
-                digital experiences.
+                I'm a passionate software engineer with a keen eye for detail
+                and a love for solving complex problems. My journey in
+                technology has been driven by curiosity and the desire to create
+                meaningful digital experiences.
               </p>
               <p>
-                With expertise spanning full-stack development, data analysis, and artificial intelligence, I bring a
-                comprehensive approach to every project. I believe in the power of clean code, efficient algorithms, and
-                user-centered design.
+                With expertise spanning full-stack development, data analysis,
+                and artificial intelligence, I bring a comprehensive approach to
+                every project. I believe in the power of clean code, efficient
+                algorithms, and user-centered design.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies, playing Valorant, or
-                just existing thinking about random topics.
+                When I'm not coding, you'll find me exploring new technologies,
+                playing Valorant, or just existing thinking about random topics.
               </p>
               <p>
                 Currently, I'm studying Golang, looking forward to work with it.
@@ -67,11 +69,9 @@ export default function About() {
                 </Button>
               </a> */}
             </div>
-
-
           </motion.div>
         </div>
       </div>
     </section>
-  )
+  );
 }
