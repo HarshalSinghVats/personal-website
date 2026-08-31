@@ -2,7 +2,7 @@ import Hero from "./components/hero"
 import About from "./components/about"
 import Gallery from "./components/gallery"
 import Portfolio from "./components/portfolio"
-import Contact from "./components/contact"
+// import Contact from "./components/contact"
 import Footer from "./components/footer"
 import { CustomCursor } from "./components/custom-cursor"
 import WorkExperience from "./components/work-experience"
@@ -16,7 +16,7 @@ export default function Page() {
       <WorkExperience/>
       <Gallery />
       <Portfolio />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </main>
   )

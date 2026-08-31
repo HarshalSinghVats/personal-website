@@ -11,7 +11,7 @@ export default function Footer() {
               <Github className="h-5 w-5" />
               <span className="sr-only">GitHub</span>
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+            <a href="https://leetcode.com/u/harshalsinghvats/" className="text-gray-400 hover:text-white transition-colors">
               <Code className="h-5 w-5" />
               <span className="sr-only">LeetCode</span>
             </a>
