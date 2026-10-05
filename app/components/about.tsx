@@ -20,7 +20,7 @@ export default function About() {
             transition={{ duration: 0.8 }}
           >
             <img
-              src="/profile.jpg?height=600&width=500"
+              src="/new-portfolio-pic.jpeg?height=600&width=500"
               alt="Harshal Singh Vats"
               className="h-full w-full object-cover object-[center_20px]"
             />
