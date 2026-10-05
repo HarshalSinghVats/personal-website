@@ -42,9 +42,9 @@ export default function About() {
                 meaningful digital experiences.
               </p>
               <p>
-                With expertise spanning full-stack development, data analysis,
-                and artificial intelligence, I bring a comprehensive approach to
-                every project. I believe in the power of clean code, efficient
+                With expertise spanning backend engineering, data analysis, 
+                system design and artificial intelligence, I bring a comprehensive 
+                approach to every project. I believe in the power of clean code, efficient
                 algorithms, and user-centered design.
               </p>
               <p>
